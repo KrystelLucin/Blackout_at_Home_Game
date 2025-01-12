@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\Unity Projects\\Blackout_at_Home_Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|d:\\unity projects\\blackout_at_home_game\\assets\\brick project studio\\_bps basic assets\\common\\scripts and animations\\first person player\\mouselook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|solutionrelative:assets\\brick project studio\\_bps basic assets\\common\\scripts and animations\\first person player\\mouselook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|d:\\unity projects\\blackout_at_home_game\\assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|D:\\Unity Projects\\Blackout_at_Home_Game\\assets\\scripts\\flashlightonandoff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\flashlightonandoff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MouseLook.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Brick Project Studio\\_BPS Basic Assets\\Common\\Scripts and Animations\\First Person Player\\MouseLook.cs",
-              "RelativeDocumentMoniker": "Assets\\Brick Project Studio\\_BPS Basic Assets\\Common\\Scripts and Animations\\First Person Player\\MouseLook.cs",
-              "ToolTip": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Brick Project Studio\\_BPS Basic Assets\\Common\\Scripts and Animations\\First Person Player\\MouseLook.cs",
-              "RelativeToolTip": "Assets\\Brick Project Studio\\_BPS Basic Assets\\Common\\Scripts and Animations\\First Person Player\\MouseLook.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FlashLightONandOFF.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\FlashLightONandOFF.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FlashLightONandOFF.cs",
+              "ToolTip": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\FlashLightONandOFF.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FlashLightONandOFF.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T02:44:46.499Z",
+              "WhenOpened": "2025-01-12T03:08:35.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Door.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\Door.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Door.cs",
+              "ToolTip": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\Door.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Door.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T03:07:32.203Z",
               "EditorCaption": ""
             }
           ]
