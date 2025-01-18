@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Unity Projects\\Blackout_at_Home_Game\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|d:\\unity projects\\blackout_at_home_game\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|d:\\unity projects\\blackout_at_home_game\\assets\\scripts\\playerraycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerraycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,11 +19,11 @@
       "RelativeMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\flashlightonandoff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|d:\\unity projects\\blackout_at_home_game\\assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|D:\\Unity Projects\\Blackout_at_Home_Game\\assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|d:\\unity projects\\blackout_at_home_game\\assets\\scripts\\cameraloopmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|D:\\Unity Projects\\Blackout_at_Home_Game\\assets\\scripts\\cameraloopmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameraloopmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -35,19 +39,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
+              "ToolTip": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\Movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T00:23:01.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerRaycast.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\PlayerRaycast.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerRaycast.cs",
               "ToolTip": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\PlayerRaycast.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerRaycast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T05:09:09.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CameraLoopMovement.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\CameraLoopMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraLoopMovement.cs",
@@ -55,12 +72,11 @@
               "RelativeToolTip": "Assets\\Scripts\\CameraLoopMovement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T04:58:09.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T04:58:09.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Menu.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\Menu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Menu.cs",
@@ -68,12 +84,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Menu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T04:13:29.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T04:13:29.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FlashLightONandOFF.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\FlashLightONandOFF.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FlashLightONandOFF.cs",
@@ -81,21 +96,19 @@
               "RelativeToolTip": "Assets\\Scripts\\FlashLightONandOFF.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T03:08:35.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T03:08:35.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Door.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\Door.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Door.cs",
               "ToolTip": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\Door.cs",
               "RelativeToolTip": "Assets\\Scripts\\Door.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T03:07:32.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T03:07:32.203Z"
             }
           ]
         }
