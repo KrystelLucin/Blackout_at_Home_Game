@@ -6,7 +6,8 @@ using TMPro;
 public class PhoneController : MonoBehaviour, IInteractable
 {
     public TMP_Text interactionText;
-    public AudioSource audioSource; // Referencia al componente de audio
+    public AudioSource audioSource;
+    public Material screenMaterial;
     private bool isRinging = false;  // Indica si el teléfono está sonando
 
     // Start is called before the first frame update
@@ -16,6 +17,8 @@ public class PhoneController : MonoBehaviour, IInteractable
 
         audioSource.enabled = false;
         audioSource.loop = true;
+
+        screenMaterial.DisableKeyword("_EMISSION");
     }
 
     public void Interact()
@@ -36,9 +39,9 @@ public class PhoneController : MonoBehaviour, IInteractable
     {
         if (!isRinging && audioSource != null)
         {
-
             audioSource.enabled = true;
             audioSource.Play();
+            screenMaterial.EnableKeyword("_EMISSION");
             isRinging = true;
         }
     }
@@ -47,6 +50,7 @@ public class PhoneController : MonoBehaviour, IInteractable
         if (isRinging && audioSource != null)
         {
             audioSource.Stop();
+            screenMaterial.DisableKeyword("_EMISSION");
             isRinging = false;
         }
     }
