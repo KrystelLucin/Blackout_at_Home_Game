@@ -6,17 +6,21 @@ using TMPro;
 public class PhoneController : MonoBehaviour, IInteractable
 {
     public TMP_Text interactionText;
-    public AudioSource audioSource;
+    public AudioSource ringingAudio;
+    public AudioSource momCallAudio;
     public Material screenMaterial;
-    private bool isRinging = false;  // Indica si el teléfono está sonando
+    private bool isRinging = false; 
 
     // Start is called before the first frame update
     void Start()
     {
         interactionText.gameObject.SetActive(false);
 
-        audioSource.enabled = false;
-        audioSource.loop = true;
+        ringingAudio.enabled = false;
+        ringingAudio.loop = true;
+
+
+        momCallAudio.enabled = false;
 
         screenMaterial.DisableKeyword("_EMISSION");
     }
@@ -37,21 +41,24 @@ public class PhoneController : MonoBehaviour, IInteractable
 
     public void StartRinging()
     {
-        if (!isRinging && audioSource != null)
+        if (!isRinging && ringingAudio != null)
         {
-            audioSource.enabled = true;
-            audioSource.Play();
+            ringingAudio.enabled = true;
+            ringingAudio.Play();
             screenMaterial.EnableKeyword("_EMISSION");
             isRinging = true;
         }
     }
     public void StopRinging()
     {
-        if (isRinging && audioSource != null)
+        if (isRinging && ringingAudio != null)
         {
-            audioSource.Stop();
+            ringingAudio.Stop();
             screenMaterial.DisableKeyword("_EMISSION");
             isRinging = false;
+
+            momCallAudio.enabled = true;
+            momCallAudio.Play();
         }
     }
 }
