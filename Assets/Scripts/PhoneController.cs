@@ -10,19 +10,21 @@ public class PhoneController : MonoBehaviour, IInteractable
     public AudioSource momCallAudio;
     public Material screenMaterial;
     private bool isRinging = false;
+    public AudioSource ambienceSound;
+    public AudioSource menuMusic;
     
     // Start is called before the first frame update
     void Start()
     {
+        menuMusic.Play();
         interactionText.gameObject.SetActive(false);
-
         ringingAudio.enabled = false;
         ringingAudio.loop = true;
-
 
         momCallAudio.enabled = false;
 
         screenMaterial.DisableKeyword("_EMISSION");
+        
     }
 
     public void Interact()
@@ -30,7 +32,7 @@ public class PhoneController : MonoBehaviour, IInteractable
         if (isRinging)
         {
             StopRinging();
-            Debug.Log("Teléfono silenciado por el jugador.");
+            Debug.Log("Telï¿½fono silenciado por el jugador.");
         }
     }
 
@@ -43,10 +45,12 @@ public class PhoneController : MonoBehaviour, IInteractable
     {
         if (!isRinging && ringingAudio != null)
         {
+            menuMusic.Stop();
             ringingAudio.enabled = true;
             ringingAudio.Play();
             screenMaterial.EnableKeyword("_EMISSION");
             isRinging = true;
+            ambienceSound.Play();
         }
     }
     public void StopRinging()
