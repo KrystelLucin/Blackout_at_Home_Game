@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     {
         ShowMenu();
 
+        RenderSettings.fog = true;
         phoneController = phone.GetComponent<PhoneController>();
 
         wakeUpAnimation = wakeUpCamera.GetComponent<WakeUpAnimation>();
@@ -53,6 +54,7 @@ public class GameManager : MonoBehaviour
         menuCamera.SetActive(false);
         wakeUpCamera.SetActive(true); // Activar la cámara de despertar
         gameCamera.SetActive(false);
+        RenderSettings.fog = false;
 
         firstPersonPlayer.SetActive(false);
 

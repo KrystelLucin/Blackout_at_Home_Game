@@ -9,8 +9,8 @@ public class PhoneController : MonoBehaviour, IInteractable
     public AudioSource ringingAudio;
     public AudioSource momCallAudio;
     public Material screenMaterial;
-    private bool isRinging = false; 
-
+    private bool isRinging = false;
+    
     // Start is called before the first frame update
     void Start()
     {

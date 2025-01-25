@@ -16,6 +16,9 @@ public class EnvironmentController : MonoBehaviour
     public Material nightSkybox;     // Skybox para la noche
     public Material dawnSkybox;      // Skybox para el amanecer
 
+    [Header("Fog Settings")]
+    public GameObject House;
+
     private Color dayAmbientColor = Color.white; // Blanco para el día
     private Color otherAmbientColor = new Color(0.039f, 0.039f, 0.039f); // Gris oscuro (#0a0a0a)
 
@@ -26,6 +29,7 @@ public class EnvironmentController : MonoBehaviour
     void Start()
     {
         UpdateSkybox(currentSkybox, true);
+        ApplyFog();
     }
 
     // Update is called once per frame
@@ -138,6 +142,11 @@ public class EnvironmentController : MonoBehaviour
         RenderSettings.skybox = targetSkybox;
         RenderSettings.ambientLight = targetAmbientColor;
         DynamicGI.UpdateEnvironment();
+    }
+
+    private void ApplyFog()
+    {
+
     }
 
 }
