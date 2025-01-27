@@ -5,9 +5,12 @@ using UnityEngine;
 public class FoodController : MonoBehaviour
 {
     [Header("Food States")]
-    public bool isHot = false; // Indica si la comida está caliente
+    public bool isHot = false; // Indica si la comida estï¿½ caliente
     public bool isEaten = false; // Indica si la comida ya ha sido comida
-    public bool isPickedUp = false; // Indica si la comida está en la mano del jugador
+    public bool isPickedUp = false; // Indica si la comida estï¿½ en la mano del jugador
+    public bool isOnTable = false; // Indica si la comida estï¿½ en la mesa
+
+    public Transform tablePosition; // Posiciï¿½n de la mesa
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,21 @@ public class FoodController : MonoBehaviour
     public void HeatFood()
     {
         isHot = true;
-        Debug.Log("La comida está caliente.");
+        Debug.Log("La comida estï¿½ caliente.");
+    }
+
+    public void EatFood()
+    {
+        isEaten = true;
+        Debug.Log("La comida ha sido comida.");
+    }
+
+    public void PlaceFoodOnTable()
+    {
+        transform.position = tablePosition.position;
+        isPickedUp = false;
+        isOnTable = true;
+        Debug.Log("La comida ha sido colocada en la mesa.");
+
     }
 }
