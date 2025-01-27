@@ -9,6 +9,8 @@ public class DoorsController : MonoBehaviour, IInteractable
     [SerializeField] private float openRotationY;
     [SerializeField] private float rotationSpeed = 2f;
 
+    public AudioSource openDoor;
+    public AudioSource closeDoor;
     private bool isOpen = false;
     public TMP_Text interactionText;
 

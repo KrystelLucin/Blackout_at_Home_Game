@@ -6,47 +6,56 @@ using UnityEngine;
 public class TaskManager : MonoBehaviour
 {
     [Header("Task Management")]
-    public List<TaskBase> allTasks; // Lista de todas las tareas del juego
-    private int currentTaskIndex = 0; // Índice de la tarea actual
+    public List<TaskBase> allTasks;
+    private int currentTaskIndex = 0; 
 
     [Header("UI Components")]
-    public TMP_Text taskText; // Texto para mostrar la descripción de la tarea activa
+    public TMP_Text taskText; 
 
     void Start()
     {
-        // Inicializa las tareas
+        // Inicializa todas las tareas y vincula sus eventos
         foreach (var task in allTasks)
         {
             task.OnTaskComplete += HandleTaskCompletion;
+            task.gameObject.SetActive(false); // Desactiva todas las tareas al inicio
         }
 
-        DisplayCurrentTask(); // Muestra la primera tarea activa
+        // Activa la primera tarea (índice 0)
+        ActivateCurrentTask();
     }
 
     void HandleTaskCompletion()
     {
-        // Mueve al siguiente índice y actualiza la interfaz
+        // Avanza al siguiente índice cuando la tarea actual se complete
         currentTaskIndex++;
-        DisplayCurrentTask();
-    }
 
-    void DisplayCurrentTask()
-    {
-        // Comprueba si quedan tareas activas
+        // Verifica si hay más tareas en la lista
         if (currentTaskIndex < allTasks.Count)
         {
-            var currentTask = allTasks[currentTaskIndex];
-
-            if (currentTask.ArePrerequisitesMet() && !currentTask.isCompleted)
-            {
-                taskText.text = currentTask.taskDescription;
-                currentTask.ActivateTask();
-            }
+            ActivateCurrentTask(); // Activa la siguiente tarea
         }
         else
         {
-            // Si no hay tareas activas
-            taskText.text = "Todas las tareas completadas";
+            // Si no quedan tareas, muestra un mensaje final
+            taskText.text = "Todas las tareas completadas.";
+            Debug.Log("¡Todas las tareas completadas!");
+        }
+    }
+
+    void ActivateCurrentTask()
+    {
+        // Verifica si la tarea actual está dentro de los límites de la lista
+        if (currentTaskIndex < allTasks.Count && currentTaskIndex >= 0)
+        {
+            var currentTask = allTasks[currentTaskIndex];
+            currentTask.ActivateTask(); // Activa la tarea actual
+            taskText.text = currentTask.taskDescription; // Actualiza la interfaz
+            Debug.Log($"Nueva tarea activa: {currentTask.taskDescription}");
+        }
+        else
+        {
+            Debug.LogWarning("Índice de tarea fuera de los límites de la lista.");
         }
     }
 }

@@ -10,6 +10,7 @@ public class PhoneController : MonoBehaviour, IInteractable
     public AudioSource momCallAudio;
     public Material screenMaterial;
     public bool isRinging = false;
+    public bool ringingStoped = false;
     public AudioSource ambienceSound;
     public AudioSource menuMusic;
     
@@ -46,6 +47,7 @@ public class PhoneController : MonoBehaviour, IInteractable
     {
         if (!isRinging && ringingAudio != null)
         {
+            ringingStoped = false;
             menuMusic.Stop();
             ringingAudio.enabled = true;
             ringingAudio.Play();
@@ -61,6 +63,7 @@ public class PhoneController : MonoBehaviour, IInteractable
             ringingAudio.Stop();
             screenMaterial.DisableKeyword("_EMISSION");
             isRinging = false;
+            ringingStoped = true;
 
             momCallAudio.enabled = true;
             momCallAudio.Play();
