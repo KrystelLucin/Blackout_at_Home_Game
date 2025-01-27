@@ -22,6 +22,7 @@ public class MicrowaveController : MonoBehaviour, IInteractable
 
     [Header("Configuración del Microondas")]
     public float cookingTime = 5f; // Tiempo que el microondas cocinará la comida
+    public AudioSource microwaveEndSound; // Sonido del microondas
     public AudioSource microwaveSound; // Sonido del microondas
 
     public TMP_Text interactionText;
@@ -29,6 +30,7 @@ public class MicrowaveController : MonoBehaviour, IInteractable
     void Start()
     {
         microwaveSound.enabled = false;
+        microwaveEndSound.enabled = false;
     }
 
     void Update()
@@ -78,6 +80,9 @@ public class MicrowaveController : MonoBehaviour, IInteractable
 
         // Activa la luz y empieza a girar el plato
         microwaveLight.enabled = true;
+        microwaveSound.enabled = true;
+        microwaveSound.Play();
+
         StartCoroutine(RotatePlate());
 
         // Detiene el microondas después del tiempo de cocción
@@ -101,8 +106,10 @@ public class MicrowaveController : MonoBehaviour, IInteractable
     {
         isMicrowaveRunning = false;
         microwaveLight.enabled = false;
-        microwaveSound.enabled = true;
-        microwaveSound.Play();
+        microwaveSound.Stop();
+        microwaveSound.enabled = false;
+        microwaveEndSound.enabled = true;
+        microwaveEndSound.Play();
 
         if (foodInside != null)
         {

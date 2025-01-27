@@ -17,24 +17,41 @@ public class DoorsController : MonoBehaviour, IInteractable
     private void Start()
     {
         interactionText.gameObject.SetActive(false);
-        door.transform.localEulerAngles = new Vector3(0, 0, 0);
+        door.transform.localEulerAngles = Vector3.zero; // Inicializa la rotación de la puerta.
+        openDoor.enabled = false;
+        closeDoor.enabled = false;
     }
 
     public void Interact()
     {
         isOpen = !isOpen;
+
+        if (isOpen && openDoor != null)
+        {
+            openDoor.enabled = true;
+            openDoor.Play();
+        }
+        else if (!isOpen && closeDoor != null)
+        {
+            closeDoor.enabled = true;
+            closeDoor.Play();
+        }
         StopAllCoroutines();
         StartCoroutine(RotateDoor());
     }
 
-    private System.Collections.IEnumerator RotateDoor()
+    private IEnumerator RotateDoor()
     {
         float targetY = isOpen ? openRotationY : 0f; // Determina el ángulo objetivo.
         float currentY = door.transform.localEulerAngles.y;
 
+        // Corrige el ángulo actual para evitar problemas con rotaciones negativas.
+        if (currentY > 180f) currentY -= 360f;
+
         while (Mathf.Abs(Mathf.DeltaAngle(currentY, targetY)) > 0.1f)
         {
-            currentY = Mathf.MoveTowards(currentY, targetY, rotationSpeed * Time.deltaTime * 100f);
+            // Actualiza el ángulo interpolado.
+            currentY = Mathf.MoveTowardsAngle(currentY, targetY, rotationSpeed * Time.deltaTime * 100f);
             door.transform.localEulerAngles = new Vector3(0, currentY, 0);
             yield return null;
         }
