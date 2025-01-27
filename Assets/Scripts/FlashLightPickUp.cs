@@ -18,10 +18,17 @@ public class Linterna : MonoBehaviour, IInteractable
             {
                 transform.SetParent(handPosition);
 
-                // Asignar las coordenadas específicas
-                transform.localPosition = new Vector3(0.2160001f, 0.08500004f, -0.4340004f); // Coordenadas locales
-                transform.localRotation = Quaternion.Euler(-90f, 0f, 172.338f); // Rotación específica
+                transform.SetParent(handPosition);
+                transform.localPosition = new Vector3(0.3f, -0.2f, 0.6f); // Ajustar según la visibilidad
+                transform.localRotation = Quaternion.Euler(15f, 45f, 0f); // Orientación visible
+                transform.localScale = Vector3.one * 0.8f; // Escalar si es necesario
 
+                // Desactiva la física
+                var rigidbody = GetComponent<Rigidbody>();
+                if (rigidbody != null)
+                {
+                    rigidbody.isKinematic = true;
+                }
                 isHeld = true;
             }
             else

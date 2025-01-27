@@ -9,7 +9,7 @@ public class PhoneController : MonoBehaviour, IInteractable
     public AudioSource ringingAudio;
     public AudioSource momCallAudio;
     public Material screenMaterial;
-    private bool isRinging = false;
+    public bool isRinging = false;
     public AudioSource ambienceSound;
     public AudioSource menuMusic;
     
