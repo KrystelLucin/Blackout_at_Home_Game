@@ -9,9 +9,11 @@ public class PhoneController : MonoBehaviour, IInteractable
     public AudioSource ringingAudio;
     public AudioSource momCallAudio;
     public Material screenMaterial;
-    private bool isRinging = false;
+    public bool isRinging = false;
+    public bool ringingStoped = false;
     public AudioSource ambienceSound;
     public AudioSource menuMusic;
+    public FoodController foodController;
     
     
     // Start is called before the first frame update
@@ -46,6 +48,7 @@ public class PhoneController : MonoBehaviour, IInteractable
     {
         if (!isRinging && ringingAudio != null)
         {
+            ringingStoped = false;
             menuMusic.Stop();
             ringingAudio.enabled = true;
             ringingAudio.Play();
@@ -61,9 +64,23 @@ public class PhoneController : MonoBehaviour, IInteractable
             ringingAudio.Stop();
             screenMaterial.DisableKeyword("_EMISSION");
             isRinging = false;
+            ringingStoped = true;
 
             momCallAudio.enabled = true;
             momCallAudio.Play();
         }
     }
+
+    public void RingingTrigger()
+    {
+        if (foodController != null && foodController.isEaten && !isRinging)
+        {
+            ringingStoped = false;
+            ringingAudio.enabled = true;
+            ringingAudio.Play();
+            screenMaterial.EnableKeyword("_EMISSION");
+            isRinging = true;
+        }
+    }
+
 }
