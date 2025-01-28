@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jodan\\Downloads\\Blackout_at_Home_Game\\",
+  "WorkspaceRootPath": "D:\\Unity Projects\\Blackout_at_Home_Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|c:\\users\\jodan\\downloads\\blackout_at_home_game\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|d:\\unity projects\\blackout_at_home_game\\assets\\scripts\\flashlightpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\flashlightpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|d:\\unity projects\\blackout_at_home_game\\assets\\scripts\\playerraycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C803794-BC37-26D3-8CF8-09627499CDE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerraycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\jodan\\Downloads\\Blackout_at_Home_Game\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\jodan\\Downloads\\Blackout_at_Home_Game\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAQAAAAoAAAAAAAAAA==",
+              "Title": "FlashLightPickUp.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\FlashLightPickUp.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FlashLightPickUp.cs",
+              "ToolTip": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\FlashLightPickUp.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FlashLightPickUp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T22:36:58.686Z",
+              "WhenOpened": "2025-01-25T21:14:26.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerRaycast.cs",
+              "DocumentMoniker": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\PlayerRaycast.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerRaycast.cs",
+              "ToolTip": "D:\\Unity Projects\\Blackout_at_Home_Game\\Assets\\Scripts\\PlayerRaycast.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerRaycast.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwB0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T21:04:33.448Z",
               "EditorCaption": ""
             }
           ]

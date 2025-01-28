@@ -21,8 +21,8 @@ using UnityEngine;
         // Update is called once per frame
         void Update()
         {
-            float mouseX = Input.GetAxis("Mouse X") * mouseXSensitivity * Time.deltaTime;
-            float mouseY = Input.GetAxis("Mouse Y") * mouseXSensitivity * Time.deltaTime;
+            float mouseX = Input.GetAxis("Mouse X") * mouseXSensitivity ;
+            float mouseY = Input.GetAxis("Mouse Y") * mouseXSensitivity ;
 
             xRotation -= mouseY;
             xRotation = Mathf.Clamp(xRotation, -90f, 90f);
